@@ -37,7 +37,9 @@ public class DB {
      *
      * @param args
      */
-    public static void main(String[] args, Connection con, JSONArray jsonArray) {
+    public static void main(String[] args) {
+        Connection con = DB.mysql();
+        JSONArray jsonArray = great.Url();
         System.out.println("Running main method now!!");
         great.createTables(con);
         great.Url();
